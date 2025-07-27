@@ -137,6 +137,7 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    
                     NavigationLink("SQPlaylistInfo") {
                         SQPlaylistInfo(title: "유튜브 제목", channelName: "채널명", thumbnailImageUrl: "").padding(.horizontal, 16)
                     }
@@ -170,8 +171,11 @@ struct ContentView: View {
                             .navigationTitle("SQThumbnailBox")
                         }
                     }
+                    
                     PopUps()
+                    
                     DisclosureGroup("Custom List") {
+                        
                         NavigationLink("MusicListView") {
 #if os(iOS)
                             MusicPlaylistView().toolbar(.hidden, for: .navigationBar)
@@ -179,35 +183,36 @@ struct ContentView: View {
                             Text("Hello world").sqoopBackground()
 #endif
                         }
+                        
                         NavigationLink("SQMusicListCell") {
                             ListCellContetView()
                         }
                         
-                        NavigationLink("SQSection") {
-                            SQSection(
-                                title: "Section Title",
-                                content: {
-                                    SQButtonListCell(
-                                        title: "SQButtonListCell",
-                                        action: {},
-                                        isOn: .constant(true)
-                                    )
-                                    
-                                    SQToggleListCell(
-                                        title: "SQToggleListCell",
-                                        isOn: .constant(true)
-                                    )
-                                }
-                            )
-                        }
-                        
-                        NavigationLink("SQButtonListCell") {
-                            SQButtonListCell(
-                                title: "SQButtonListCell",
-                                action: {},
-                                isOn: .constant(true)
-                            )
-                        }
+//                        NavigationLink("SQSection") {
+//                            SQSection(
+//                                title: "Section Title",
+//                                content: {
+//                                    SQButtonListCell(
+//                                        title: "SQButtonListCell",
+//                                        action: {},
+//                                        isOn: .constant(true)
+//                                    )
+//                                    
+//                                    SQToggleListCell(
+//                                        title: "SQToggleListCell",
+//                                        isOn: .constant(true)
+//                                    )
+//                                }
+//                            )
+//                        }
+//                        
+//                        NavigationLink("SQButtonListCell") {
+//                            SQButtonListCell(
+//                                title: "SQButtonListCell",
+//                                action: {},
+//                                isOn: .constant(true)
+//                            )
+//                        }
                         
                         NavigationLink("SQToggleListCell") {
                             SQToggleListCell(
@@ -216,7 +221,7 @@ struct ContentView: View {
                             )
                         }
                     }
-                  
+                     
                     DisclosureGroup("Custom Writing") {
                         NavigationLink("SQExtractingWritingSet") {
                             SQExtractingWritingSet(minutes: 3)
@@ -225,6 +230,7 @@ struct ContentView: View {
                             SQMainWriting(mainDesc: "안녕하세요", mainDesc2: "안녕하세요", subDesc: "안녕하세요")
                         }
                     }
+                     
                 } header: {
                     Text("SQ Custom Views")
                 }

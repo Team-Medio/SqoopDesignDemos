@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63249A7E2E35F20B00F3484D /* SQComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 63249A7D2E35F20B00F3484D /* SQComponents */; };
+		63249A802E35F20B00F3484D /* SqoopDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 63249A7F2E35F20B00F3484D /* SqoopDesignSystem */; };
 		63652FBA2CD3CEC40022FC9B /* SQComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 63652FB92CD3CEC40022FC9B /* SQComponents */; };
 		63652FBC2CD3CEC40022FC9B /* SqoopDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 63652FBB2CD3CEC40022FC9B /* SqoopDesignSystem */; };
 		63A9F4272CD29D69000DB0A2 /* SQComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 63A9F4262CD29D69000DB0A2 /* SQComponents */; };
@@ -32,7 +34,9 @@
 			files = (
 				63A9F4292CD29D69000DB0A2 /* SqoopDesignSystem in Frameworks */,
 				63652FBA2CD3CEC40022FC9B /* SQComponents in Frameworks */,
+				63249A802E35F20B00F3484D /* SqoopDesignSystem in Frameworks */,
 				63652FBC2CD3CEC40022FC9B /* SqoopDesignSystem in Frameworks */,
+				63249A7E2E35F20B00F3484D /* SQComponents in Frameworks */,
 				63A9F4272CD29D69000DB0A2 /* SQComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +84,8 @@
 				63A9F4282CD29D69000DB0A2 /* SqoopDesignSystem */,
 				63652FB92CD3CEC40022FC9B /* SQComponents */,
 				63652FBB2CD3CEC40022FC9B /* SqoopDesignSystem */,
+				63249A7D2E35F20B00F3484D /* SQComponents */,
+				63249A7F2E35F20B00F3484D /* SqoopDesignSystem */,
 			);
 			productName = SqoopDesignDemos;
 			productReference = 63A9F3DA2CD29D0A000DB0A2 /* SqoopDesignDemos.app */;
@@ -112,7 +118,7 @@
 			mainGroup = 63A9F3D12CD29D0A000DB0A2;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				63A9F4252CD29D69000DB0A2 /* XCLocalSwiftPackageReference "../SqoopDesignSystem" */,
+				63249A7C2E35F20B00F3484D /* XCRemoteSwiftPackageReference "SqoopDesignSystem" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 63A9F3DB2CD29D0A000DB0A2 /* Products */;
@@ -370,14 +376,28 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		63A9F4252CD29D69000DB0A2 /* XCLocalSwiftPackageReference "../SqoopDesignSystem" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../SqoopDesignSystem;
+/* Begin XCRemoteSwiftPackageReference section */
+		63249A7C2E35F20B00F3484D /* XCRemoteSwiftPackageReference "SqoopDesignSystem" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Team-Medio/SqoopDesignSystem";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		63249A7D2E35F20B00F3484D /* SQComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63249A7C2E35F20B00F3484D /* XCRemoteSwiftPackageReference "SqoopDesignSystem" */;
+			productName = SQComponents;
+		};
+		63249A7F2E35F20B00F3484D /* SqoopDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63249A7C2E35F20B00F3484D /* XCRemoteSwiftPackageReference "SqoopDesignSystem" */;
+			productName = SqoopDesignSystem;
+		};
 		63652FB92CD3CEC40022FC9B /* SQComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SQComponents;

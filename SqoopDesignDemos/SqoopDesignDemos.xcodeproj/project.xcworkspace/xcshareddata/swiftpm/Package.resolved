@@ -1,0 +1,15 @@
+{
+  "originHash" : "efd2672487e66f0e49622a011f911aa76007ff096fb764f1bea1c199c56305c9",
+  "pins" : [
+    {
+      "identity" : "sqoopdesignsystem",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Team-Medio/SqoopDesignSystem",
+      "state" : {
+        "branch" : "main",
+        "revision" : "38b8b372cf407e7ce1a4754208ff10d60883ab7f"
+      }
+    }
+  ],
+  "version" : 3
+}
